@@ -71,7 +71,6 @@ router.post('/carpark_post_test/edit/:id', (req, res) => {
       carData.rego = req.body.rego
       carData.mobile = req.body.mobile
       carData.status = req.body.status
-      carData.blocked = req.body.blocked
       console.log(carData)
       const newData = JSON.stringify(allData, null, 2)
       // dataProc.changeData(newData, (err) => {
