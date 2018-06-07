@@ -1,0 +1,43 @@
+Arguments: 
+  /Users/junior/.nvm/versions/node/v9.11.1/bin/node /usr/local/Cellar/yarn/1.7.0/libexec/bin/yarn.js add express express-handlbars
+
+PATH: 
+  /Users/junior/.nvm/versions/node/v9.11.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.7.0
+
+Node version: 
+  9.11.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/express-handlbars: Not found
+      at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.7.0/libexec/lib/cli.js:65656:18)
+      at Request.self.callback (/usr/local/Cellar/yarn/1.7.0/libexec/lib/cli.js:134675:22)
+      at Request.emit (events.js:180:13)
+      at Request.<anonymous> (/usr/local/Cellar/yarn/1.7.0/libexec/lib/cli.js:135658:10)
+      at Request.emit (events.js:180:13)
+      at IncomingMessage.<anonymous> (/usr/local/Cellar/yarn/1.7.0/libexec/lib/cli.js:135578:12)
+      at Object.onceWrapper (events.js:272:13)
+      at IncomingMessage.emit (events.js:185:15)
+      at endReadableNT (_stream_readable.js:1106:12)
+      at process._tickCallback (internal/process/next_tick.js:178:19)
+
+npm manifest: 
+  {
+    "name": "eda-carpark",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/anthony-xiao/eda-carpark.git",
+    "author": "anthony-xiao <juniorxiao01@gmail.com>",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

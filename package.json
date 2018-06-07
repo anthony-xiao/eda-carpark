@@ -4,5 +4,15 @@
   "main": "index.js",
   "repository": "https://github.com/anthony-xiao/eda-carpark.git",
   "author": "anthony-xiao <juniorxiao01@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0"
+  },
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "jest": "^23.1.0",
+    "nodemon": "^1.17.5",
+    "supertest": "^3.1.0"
+  }
 }
