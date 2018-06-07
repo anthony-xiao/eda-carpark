@@ -1,6 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const dataProc = require('../dataProc.js')
+const lib = require('../functions/lib')
 // const changeData = require('../dataProc.js')
 
 // router.get('/', (req, res) => {
@@ -58,8 +59,9 @@ router.get('/carpark/view/:id', (req, res) => {
   })
 })
 
-// read one car information return colour///////////////////
-router.get('/carpark_colour_test/:id', (req, res) => {
+
+// change one car information by post method//////////////
+router.post('/carpark/edit/:id', (req, res) => {
   const id = Number(req.params.id)
   dataProc.getData((err, data) => {
     if (err) {
@@ -67,39 +69,44 @@ router.get('/carpark_colour_test/:id', (req, res) => {
     } else {
       const allData = JSON.parse(data)
       const carData = allData.carparks.find(pup => pup.id === id)
-      console.log(carData.colour)
-      // res.render('./home/index', carData)
-      res.send('Test success! [carpark_getColour_test] : ' + JSON.stringify(carData.colour))
+      carData.name = req.body.name
+      carData.rego = req.body.rego
+      carData.mobile = req.body.mobile
+      carData.status = req.body.status
+      let updatedData = lib.park(allData)
+      console.log(carData)
+      const newData = JSON.stringify(updatedData, null, 2)
+      dataProc.changeData(newData, (err) => {
+        if (err) {
+          res.send('unable to save the file').status(500)
+        } else {
+          res.redirect('/main')
+        }
+      })
     }
   })
 })
 
-// change one car information by post method//////////////
-router.post('/carpark_post_test/edit/:id', (req, res) => {
+router.post('/carpark/view/:id', (req, res) => {
   const id = Number(req.params.id)
   dataProc.getData((err, data) => {
     if (err) {
       res.send('unable to read data file').status(500)
     } else {
       const allData = JSON.parse(data)
-      const carData = allData.puppies.find(pup => pup.id === id)
-      carData.name = req.body.name
-      carData.rego = req.body.rego
-      carData.mobile = req.body.mobile
-      carData.status = req.body.status
-      console.log(carData)
-      const newData = JSON.stringify(allData, null, 2)
+      let carData = lib.clear(allData.carparks.find(pup => pup.id === id))
+      let updatedData = lib.leave(allData)
+      const newData = JSON.stringify(updatedData, null, 2)
       dataProc.changeData(newData, (err) => {
         if (err) {
           res.send('unable to save the file').status(500)
         } else {
-          res.redirect('/puppies/' + id)
+          res.redirect('/main')
         }
       })
-
-      res.send('Test success! [carpark_carpark_post_test]: ' + newData)
     }
   })
 })
+
 
 module.exports = router
