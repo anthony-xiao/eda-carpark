@@ -1,0 +1,94 @@
+
+{
+  "carparks":  [
+    {
+      "id": 1,
+      "name": Null,
+      "rego": Null,
+      "mobile": Null,
+      "status": False,
+      "blocked": False 
+    },
+
+    {
+      "id": 2,
+      "name": Null,
+      "rego": Null,
+      "mobile": Null,
+      "status": False,
+      "blocked": False 
+    },
+
+    {
+      "id": 3,
+      "name": Null,
+      "rego": Null,
+      "mobile": Null,
+      "status": False,
+      "blocked": False 
+    },
+
+    {
+      "id": 4,
+      "name": Null,
+      "rego": Null,
+      "mobile": Null,
+      "status": False,
+      "blocked": False 
+    },
+
+    {
+      "id": 5,
+      "name": Null,
+      "rego": Null,
+      "mobile": Null,
+      "status": False,
+      "blocked": False 
+    },
+
+    {
+      "id": 6,
+      "name": Null,
+      "rego": Null,
+      "mobile": Null,
+      "status": False,
+      "blocked": False 
+    },
+
+    {
+      "id": 7,
+      "name": Null,
+      "rego": Null,
+      "mobile": Null,
+      "status": False,
+      "blocked": False 
+    },
+
+    {
+      "id": 8,
+      "name": Null,
+      "rego": Null,
+      "mobile": Null,
+      "status": False,
+      "blocked": False 
+    },
+
+    {
+      "id": 9,
+      "name": Null,
+      "rego": Null,
+      "mobile": Null,
+      "status": False,
+      "blocked": False 
+    },
+
+    {
+      "id": 10,
+      "name": Null,
+      "rego": Null,
+      "mobile": Null,
+      "status": False,
+      "blocked": False 
+    }
+  ]
+}
