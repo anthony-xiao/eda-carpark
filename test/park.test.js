@@ -5,5 +5,5 @@ test('testing blocker function changes colour to self-colour and other car to ot
   const id = 2
   const expected = 'green'
   const actual = park(carparks, id)
-  expect(actual).toBe(expected)
+  expect(actual.carparks[1].colour).toBe(expected)
 })

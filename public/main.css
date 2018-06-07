@@ -1,0 +1,25 @@
+/* custom css for carpark app */
+
+#edaIcon {
+  display: block;
+  max-width: 100%; 
+  height: auto;
+  margin-right: 0%;
+  padding: 0%;
+}
+
+#edaIconCol {
+  max-width: 80%%;
+  margin: 0%;
+  width: 100px;
+  height: 100px;
+}
+
+#appName {
+  max-width: 80%;
+}
+
+
+#parkingMap {
+  padding: 0%;
+}
