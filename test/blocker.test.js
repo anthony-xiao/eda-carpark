@@ -1,20 +1,20 @@
 const blocker = require('../functions/blocker')
 
-test('testing blocker function changes colour to self-colour and other car to other colour', done => {
+test('testing blocker function changes colour to self-colour and other car to other colour', () => {
   const carparks = {
     'carparks': [
       {
-        'id': 1,
+        'id': 8,
         'colour': 'clear'
       },
   
       {
-        'id': 2,
+        'id': 9,
         'colour': 'clear'
       }
     ]
   }
-  const id = 1
+  const id = 8
   const self = 'green'
   const other = 'red'
   const expected = 'red'
