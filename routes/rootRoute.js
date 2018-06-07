@@ -22,7 +22,7 @@ router.get('/carpark', (req, res) => {
       const carParkData = JSON.parse(data)
       console.log(carParkData)
       res.render('/main', carParkData)
-      //res.send('Test success! [carpark_allCars_test] : ' + JSON.stringify(carParkData))
+      // res.send('Test success! [carpark_allCars_test] : ' + JSON.stringify(carParkData))
     }
   })
 })
@@ -59,7 +59,6 @@ router.get('/carpark/view/:id', (req, res) => {
   })
 })
 
-
 // change one car information by post method//////////////
 router.post('/carpark/edit/:id', (req, res) => {
   const id = Number(req.params.id)
@@ -94,9 +93,10 @@ router.post('/carpark/view/:id', (req, res) => {
       res.send('unable to read data file').status(500)
     } else {
       const allData = JSON.parse(data)
-      let carData = lib.clear(allData.carparks.find(pup => pup.id === id))
-      let updatedData = lib.leave(allData)
-      const newData = JSON.stringify(updatedData, null, 2)
+      let carPark = allData.carparks.find(pup => pup.id === id)
+      carPark = lib.clear(carPark)
+      carPark = lib.leave(allData, id)
+      const newData = JSON.stringify(allData, null, 2)
       dataProc.changeData(newData, (err) => {
         if (err) {
           res.send('unable to save the file').status(500)
@@ -107,6 +107,5 @@ router.post('/carpark/view/:id', (req, res) => {
     }
   })
 })
-
 
 module.exports = router
