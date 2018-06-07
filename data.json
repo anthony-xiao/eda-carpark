@@ -3,92 +3,92 @@
   "carparks":  [
     {
       "id": 1,
-      "name": Null,
-      "rego": Null,
-      "mobile": Null,
-      "status": False,
-      "blocked": False 
+      "name": null,
+      "rego": null,
+      "mobile": null,
+      "status": false,
+      "blocked": false 
     },
 
     {
       "id": 2,
-      "name": Null,
-      "rego": Null,
-      "mobile": Null,
-      "status": False,
-      "blocked": False 
+      "name": null,
+      "rego": null,
+      "mobile": null,
+      "status": false,
+      "blocked": false 
     },
 
     {
       "id": 3,
-      "name": Null,
-      "rego": Null,
-      "mobile": Null,
-      "status": False,
-      "blocked": False 
+      "name": null,
+      "rego": null,
+      "mobile": null,
+      "status": false,
+      "blocked": false 
     },
 
     {
       "id": 4,
-      "name": Null,
-      "rego": Null,
-      "mobile": Null,
-      "status": False,
-      "blocked": False 
+      "name": null,
+      "rego": null,
+      "mobile": null,
+      "status": false,
+      "blocked": false 
     },
 
     {
       "id": 5,
-      "name": Null,
-      "rego": Null,
-      "mobile": Null,
-      "status": False,
-      "blocked": False 
+      "name": null,
+      "rego": null,
+      "mobile": null,
+      "status": false,
+      "blocked": false 
     },
 
     {
       "id": 6,
-      "name": Null,
-      "rego": Null,
-      "mobile": Null,
-      "status": False,
-      "blocked": False 
+      "name": null,
+      "rego": null,
+      "mobile": null,
+      "status": false,
+      "blocked": false 
     },
 
     {
       "id": 7,
-      "name": Null,
-      "rego": Null,
-      "mobile": Null,
-      "status": False,
-      "blocked": False 
+      "name": null,
+      "rego": null,
+      "mobile": null,
+      "status": false,
+      "blocked": false 
     },
 
     {
       "id": 8,
-      "name": Null,
-      "rego": Null,
-      "mobile": Null,
-      "status": False,
-      "blocked": False 
+      "name": null,
+      "rego": null,
+      "mobile": null,
+      "status": false,
+      "blocked": false 
     },
 
     {
       "id": 9,
-      "name": Null,
-      "rego": Null,
-      "mobile": Null,
-      "status": False,
-      "blocked": False 
+      "name": null,
+      "rego": null,
+      "mobile": null,
+      "status": false,
+      "blocked": false 
     },
 
     {
       "id": 10,
-      "name": Null,
-      "rego": Null,
-      "mobile": Null,
-      "status": False,
-      "blocked": False 
+      "name": null,
+      "rego": null,
+      "mobile": null,
+      "status": false,
+      "blocked": false 
     }
   ]
 }
