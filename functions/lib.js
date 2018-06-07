@@ -1,3 +1,5 @@
+const free = require('../functions/free')
+
 function leave (carparks, id) {
   if (id > 6 <= 9) { return blocker(carparks, id, 'clear', 'green') } else { return free(carparks, id, 'clear') }
 }

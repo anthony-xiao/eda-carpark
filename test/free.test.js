@@ -1,6 +1,6 @@
 const free = require('../functions/free')
 
-test('testing free function changes colour to self-colour', done => {
+test('testing free function changes colour to self-colour', () => {
   const carparks = {
     'carparks': [
       {
@@ -18,5 +18,5 @@ test('testing free function changes colour to self-colour', done => {
   const self = 'green'
   const expected = 'green'
   const actual = free(carparks, id, self)
-  expect(actual).toBe(expected)
+  expect(actual.carparks[0].colour).toBe(expected)
 })
