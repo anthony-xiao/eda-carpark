@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>EDA Carpark</title>
+</head>
+<h1>{{h1}}</h1>
+<body>
+ <div class = "app"></div>
+    <h1 class ="title">Carpark App</h1>
+      <a class ="nav" href="/">Home</a>
+        <p> <em>Welcome to the EDA Carpark App</em>!</p>
+          <h2><em>Driver Details</em></h2>
+
+            <form class="form" action="/puppies/edit/{{id}}" method="post">
+              <img class="img-circle" src="{{image}}" alt="{{name}}">
+              <label for="name" class="form-item">
+                Name
+                <input type="text" name="name" value="{{name}}">
+              </label>
+
+              <label for="rego" class="form-item">
+                License Plate No.
+                <input type="text" name="breed" value="{{rego}}">
+              </label>
+              
+              <label for="mobile" class="form-item">
+                Mobile Number
+                <input type="text" name="owner" value="{{mobile}}">
+              </label>
+              
+              <label for="comments" class="form-item">
+                Comments (e.g. estimated leaving time, attending an event/meetup)
+                <input type="text" name="owner" value="{{comments}}">
+              </label>
+
+              <label for="status" class="form-item">
+               Are you a student, staff, or a guest?
+                <input type="text" name="owner" value="{{status}}">
+              </label>
+
+               <label for="comments" class="form-item">
+                Comments (e.g. estimated leaving time, attending an event/meetup)
+                <input type="text" name="owner" value="{{comments}}">
+              </label>
+
+              {{!-- <input type="hidden" name="image" value="{{image}}"> --}}
+              
+              <input type="submit" name="" value="Submit">
+            </form>
+</body>
+</html>
