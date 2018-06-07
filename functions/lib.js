@@ -4,7 +4,7 @@ function leave (carparks, id) {
 }
 
 function park (carparks, id) {
-  if (id > 6 || id <= 9) { return blocker(carparks, id, 'green', 'red') } else { return free(carparks, id, 'green') }
+  if (id > 6 <= 9) { return blocker(carparks, id, 'green', 'red') } else { return free(carparks, id, 'green') }
 }
 
 function free (carparks, id, self) {
