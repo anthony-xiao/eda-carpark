@@ -3,7 +3,7 @@ const router = express.Router()
 const getData = require('../getData.js')
 
 router.get('/', (req, res) => {
-  res.send('I am here!!')
+  res.send('I am here!')
 })
 
 router.get('/carpark', (req, res) => {
