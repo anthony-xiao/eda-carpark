@@ -27,7 +27,11 @@
       "mobile": null,
       "status": false,
       "blocked": false,
+<<<<<<< HEAD
       "colour": "red"
+=======
+      "colour": null 
+>>>>>>> 4d9ef1218d3321924fb6c0d2e1835a40f732bb76
     },
 
     {
