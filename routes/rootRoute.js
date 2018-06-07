@@ -73,13 +73,13 @@ router.post('/carpark_post_test/edit/:id', (req, res) => {
       carData.status = req.body.status
       console.log(carData)
       const newData = JSON.stringify(allData, null, 2)
-      // dataProc.changeData(newData, (err) => {
-      //  if (err) {
-      //    res.send('unable to save the file').status(500)
-      //  } else {
-      //    res.redirect('/puppies/' + id)
-      //  }
-      // })
+      dataProc.changeData(newData, (err) => {
+        if (err) {
+          res.send('unable to save the file').status(500)
+        } else {
+          res.redirect('/puppies/' + id)
+        }
+      })
 
       res.send('Test success! [carpark_carpark_post_test]: ' + newData)
     }
