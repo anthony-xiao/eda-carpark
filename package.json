@@ -5,9 +5,15 @@
   "repository": "https://github.com/anthony-xiao/eda-carpark.git",
   "author": "anthony-xiao <juniorxiao01@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "debug": "node index --ignore data.json",
+    "test": "jest --watchAll --noStackTrace",
+    "start": "node index"
+  },
   "dependencies": {
     "express": "^4.16.3",
-    "express-handlebars": "^3.0.0"
+    "express-handlebars": "^3.0.0",
+    "handlebar": "^1.0.0"
   },
   "devDependencies": {
     "cheerio": "^1.0.0-rc.2",
