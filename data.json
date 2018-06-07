@@ -1,4 +1,3 @@
-
 {
   "carparks":  [
     {
@@ -7,7 +6,8 @@
       "rego": null,
       "mobile": null,
       "status": false,
-      "blocked": false 
+      "blocked": false,
+      "colour": null 
     },
 
     {
@@ -16,7 +16,8 @@
       "rego": null,
       "mobile": null,
       "status": false,
-      "blocked": false 
+      "blocked": false,
+      "colour": null 
     },
 
     {
@@ -25,7 +26,8 @@
       "rego": null,
       "mobile": null,
       "status": false,
-      "blocked": false 
+      "blocked": false,
+      "colour": "red"
     },
 
     {
@@ -34,7 +36,8 @@
       "rego": null,
       "mobile": null,
       "status": false,
-      "blocked": false 
+      "blocked": false,
+      "colour": null 
     },
 
     {
@@ -43,7 +46,8 @@
       "rego": null,
       "mobile": null,
       "status": false,
-      "blocked": false 
+      "blocked": false,
+      "colour": null 
     },
 
     {
@@ -52,7 +56,8 @@
       "rego": null,
       "mobile": null,
       "status": false,
-      "blocked": false 
+      "blocked": false,
+      "colour": null 
     },
 
     {
@@ -61,7 +66,8 @@
       "rego": null,
       "mobile": null,
       "status": false,
-      "blocked": false 
+      "blocked": false,
+      "colour": null 
     },
 
     {
@@ -70,7 +76,8 @@
       "rego": null,
       "mobile": null,
       "status": false,
-      "blocked": false 
+      "blocked": false,
+      "colour": null 
     },
 
     {
@@ -79,7 +86,8 @@
       "rego": null,
       "mobile": null,
       "status": false,
-      "blocked": false 
+      "blocked": false,
+      "colour": null 
     },
 
     {
@@ -88,7 +96,8 @@
       "rego": null,
       "mobile": null,
       "status": false,
-      "blocked": false 
+      "blocked": false,
+      "colour": null 
     }
   ]
 }
