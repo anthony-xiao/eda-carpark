@@ -1,5 +1,5 @@
-const free = require('../functions/free')
-const blocker = require('../functions/blocker')
+const free = require('./free')
+const blocker = require('./blocker')
 
 
 function leave (carparks, id) {

@@ -1,19 +1,7 @@
 const free = require('../functions/free')
+const carparks = require('../data.json')
 
 test('testing free function changes colour to self-colour', () => {
-  const carparks = {
-    'carparks': [
-      {
-        'id': 1,
-        'colour': 'clear'
-      },
-  
-      {
-        'id': 2,
-        'colour': 'clear'
-      }
-    ]
-  }
   const id = 1
   const self = 'green'
   const expected = 'green'
