@@ -69,7 +69,7 @@ router.post('/carpark_post_test/edit/:id', (req, res) => {
       const carData = allData.puppies.find(pup => pup.id === id)
       carData.name = req.body.name
       carData.rego = req.body.rego
-      carData.mobile = req.bgody.mobile
+      carData.mobile = req.body.mobile
       carData.status = req.body.status
       console.log(carData)
       const newData = JSON.stringify(allData, null, 2)
