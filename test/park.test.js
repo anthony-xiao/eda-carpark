@@ -1,9 +1,16 @@
 const park = require('../functions/park')
-const carparks = require('../data.json')
+const carpark = {
+  'id': 1,
+  'name': 'test',
+  'rego': 'test',
+  'mobile': '111',
+  'status': false,
+  'blocked': false,
+  'colour': null
+}
 
 test('testing blocker function changes colour to self-colour and other car to other colour', () => {
-  const id = 2
   const expected = 'green'
-  const actual = park(carparks, id)
+  const actual = park(carpark)
   expect(actual.carparks[1].colour).toBe(expected)
 })
