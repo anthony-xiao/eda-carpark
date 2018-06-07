@@ -1,0 +1,8 @@
+{
+  "name": "eda-carpark",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/anthony-xiao/eda-carpark.git",
+  "author": "anthony-xiao <juniorxiao01@gmail.com>",
+  "license": "MIT"
+}
