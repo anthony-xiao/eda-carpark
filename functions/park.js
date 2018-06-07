@@ -1,10 +1,10 @@
 const free = require('./free')
 const blocker = require('./blocker')
 
-module.exports = (carpark, id) => {
+module.exports = (carparks, id) => {
   if (id > 6 && id <= 9) {
-    return blocker(carpark, id, 'green', 'red')
+    return blocker(carparks, id, 'green', 'red')
   } else {
-    return free(carpark, 'green')
+    return free(carparks, id, 'green')
   }
 }
