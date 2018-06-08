@@ -8,10 +8,7 @@ function leave (carparks, id) {
 
 
 
-module.exports = {
-  leave,
-  park
-}
+module.exports = leave
 
 
-console.log(carparks.carparks[0].colour)
+

@@ -1,8 +1,9 @@
 const express = require('express')
 const router = express.Router()
 const dataProc = require('../dataProc.js')
-const lib = require('../functions/lib')
-
+const park = require('../functions/park')
+const leave = require('../functions/lib')
+const clear = require('../functions/clear')
 // const changeData = require('../dataProc.js')
 
 // router.get('/', (req, res) => {
@@ -37,7 +38,7 @@ router.get('/carpark/edit/:id', (req, res) => {
       const allData = JSON.parse(data)
       const carData = allData.carparks.find(pup => pup.id === id)
       // res.render('edit', carData)
-      res.send('Test success! [carpark_oneCar_test by id] : ' + JSON.stringify(carData))
+      res.send('get edit route working' + JSON.stringify(carData))
     }
   })
 })
@@ -52,7 +53,7 @@ router.get('/carpark/view/:id', (req, res) => {
       const allData = JSON.parse(data)
       const carData = allData.carparks.find(pup => pup.id === id)
       // res.render('view', carData)
-      res.send('Test success! [carpark_oneCar_test by id] : ' + JSON.stringify(carData))
+      res.send('get view route working' + JSON.stringify(carData))
     }
   })
 })
@@ -70,7 +71,7 @@ router.post('/carpark/edit/:id', (req, res) => {
       carData.rego = req.body.rego
       carData.mobile = req.body.mobile
       carData.status = req.body.status
-      let updatedData = lib.park(allData, id)
+      let updatedData = park(allData, id)
       const newData = JSON.stringify(updatedData, null, 2)
       dataProc.changeData(newData, (err) => {
         if (err) {
@@ -90,8 +91,8 @@ router.post('/carpark/view/:id', (req, res) => {
       res.send('unable to read data file').status(500)
     } else {
       const allData = JSON.parse(data)
-      allData.carparks[id - 1] = lib.clear(allData.carparks.find(pup => pup.id === id))
-      let updatedData = lib.leave(allData, id)
+      allData.carparks[id - 1] = clear(allData.carparks.find(pup => pup.id === id))
+      let updatedData = leave(allData, id)
       const newData = JSON.stringify(updatedData, null, 2)
       dataProc.changeData(newData, (err) => {
         if (err) {
