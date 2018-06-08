@@ -26,7 +26,7 @@
         <p> <em>Welcome to the EDA Carpark App</em>!</p>
           <h2><em>Driver Details</em></h2>
 
-            <form>
+            <form class = "form" action= '/carpark/edit/{{id}}' method= "POST">
               <div class="formGroup">
                   <label for="name" class="form-item">Name</label>
                   <input type="name" class="form-control" value="{{name}}" placeholder="Name">

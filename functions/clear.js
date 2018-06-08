@@ -1,6 +1,6 @@
 module.exports = (carData) => {
   for (let info in carData) {
-    carData[info] = null
+    carData[info] = ''
   }
   carData.id = 1
   carData.status = false
