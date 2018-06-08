@@ -1,5 +1,5 @@
 {
-  "carparks":  [
+  "carparks": [
     {
       "id": 1,
       "name": null,
@@ -10,7 +10,6 @@
       "colour": null,
       "url": "/carpark/edit/:id"
     },
-
     {
       "id": 2,
       "name": null,
@@ -21,7 +20,6 @@
       "colour": null,
       "url": "/carpark/edit/:id"
     },
-
     {
       "id": 3,
       "name": null,
@@ -32,7 +30,6 @@
       "colour": "red",
       "url": "/carpark/edit/:id"
     },
-
     {
       "id": 4,
       "name": null,
@@ -40,10 +37,9 @@
       "mobile": null,
       "status": false,
       "blocked": false,
-      "colour": null ,
+      "colour": null,
       "url": "/carpark/edit/:id"
     },
-
     {
       "id": 5,
       "name": null,
@@ -51,10 +47,9 @@
       "mobile": null,
       "status": false,
       "blocked": false,
-      "colour": null ,
+      "colour": null,
       "url": "/carpark/edit/:id"
     },
-
     {
       "id": 6,
       "name": null,
@@ -62,10 +57,9 @@
       "mobile": null,
       "status": false,
       "blocked": false,
-      "colour": null ,
+      "colour": null,
       "url": "/carpark/edit/:id"
     },
-
     {
       "id": 7,
       "name": null,
@@ -73,10 +67,9 @@
       "mobile": null,
       "status": false,
       "blocked": false,
-      "colour": null ,
+      "colour": null,
       "url": "/carpark/edit/:id"
     },
-
     {
       "id": 8,
       "name": null,
@@ -84,10 +77,9 @@
       "mobile": null,
       "status": false,
       "blocked": false,
-      "colour": null ,
+      "colour": null,
       "url": "/carpark/edit/:id"
     },
-
     {
       "id": 9,
       "name": null,
@@ -95,10 +87,9 @@
       "mobile": null,
       "status": false,
       "blocked": false,
-      "colour": null ,
+      "colour": null,
       "url": "/carpark/edit/:id"
     },
-
     {
       "id": 10,
       "name": null,
@@ -106,7 +97,7 @@
       "mobile": null,
       "status": false,
       "blocked": false,
-      "colour": null ,
+      "colour": null,
       "url": "/carpark/edit/:id"
     }
   ]

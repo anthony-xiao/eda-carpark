@@ -15,19 +15,6 @@ router.get('/', (req, res) => {
   res.redirect('/carpark')
 })
 
-// read all car park status //////////////////////////////
-router.get('/carpark', (req, res) => {
-  dataProc.getData((err, data) => {
-    if (err) {
-      res.send('unable to read data file').status(500)
-    } else {
-      const carParkData = JSON.parse(data)
-      res.render('/main', carParkData)
-      // res.send('Test success! [carpark_allCars_test] : ' + JSON.stringify(carParkData))
-    }
-  })
-})
-
 // read one car information /////////////////////////////
 router.get('/carpark/edit/:id', (req, res) => {
   const id = Number(req.params.id)
@@ -38,10 +25,25 @@ router.get('/carpark/edit/:id', (req, res) => {
       const allData = JSON.parse(data)
       const carData = allData.carparks.find(pup => pup.id === id)
       // res.render('edit', carData)
-      res.send('get edit route working' + JSON.stringify(carData))
+      res.render('./layouts/form', carData)
     }
   })
 })
+
+// read all car park status //////////////////////////////
+router.get('/carpark', (req, res) => {
+  dataProc.getData((err, data) => {
+    if (err) {
+      res.send('unable to read data file').status(500)
+    } else {
+      const carParkData = JSON.parse(data)
+      res.render('./layouts/main', carParkData)
+      // res.send('Test success! [carpark_allCars_test] : ' + JSON.stringify(carParkData))
+    }
+  })
+})
+
+
 
 // read one car information /////////////////////////////
 router.get('/carpark/view/:id', (req, res) => {
@@ -52,8 +54,7 @@ router.get('/carpark/view/:id', (req, res) => {
     } else {
       const allData = JSON.parse(data)
       const carData = allData.carparks.find(pup => pup.id === id)
-      // res.render('view', carData)
-      res.send('get view route working' + JSON.stringify(carData))
+      res.render('./layouts/details', carData)
     }
   })
 })
@@ -61,12 +62,13 @@ router.get('/carpark/view/:id', (req, res) => {
 // change one car information by post method//////////////
 router.post('/carpark/edit/:id', (req, res) => {
   const id = Number(req.params.id)
+  console.log(id)
   dataProc.getData((err, data) => {
     if (err) {
       res.send('unable to read data file').status(500)
     } else {
       const allData = JSON.parse(data)
-      const carData = allData.carparks.find(pup => pup.id === id)
+      let carData = allData.carparks.find(pup => pup.id === id)
       carData.name = req.body.name
       carData.rego = req.body.rego
       carData.mobile = req.body.mobile
@@ -77,7 +79,7 @@ router.post('/carpark/edit/:id', (req, res) => {
         if (err) {
           res.send('unable to save the file').status(500)
         } else {
-          res.redirect('/main')
+          res.redirect('/carpark')
         }
       })
     }
