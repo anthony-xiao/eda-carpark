@@ -37,13 +37,15 @@
               </tr>
             </thead>
             <tbody>
+              {{#each carpark}}
               <tr>
-                <th scope="row">1</th>
+                <th scope="row" id="1">{{id}}</th>
                 <td>{{name}}</td>
                 <td>{{rego}}</td>
                 <td>{{mobile}}</td>
                 <td>{{comments}}</td>
               </tr>
+              {{/each}}
               <tr>
                 <th scope="row">2</th>
                 <td>{{name}}</td>
@@ -109,7 +111,8 @@
                 </tr>
                 </tbody>
             </div>
-
-            
+            <div>
+            <button type="button" class="float-right">Edit</button>
+          </div>
 </body>
 </html>

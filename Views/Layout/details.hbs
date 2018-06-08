@@ -37,79 +37,18 @@
               </tr>
             </thead>
             <tbody>
+              {{#each carparks}}
               <tr>
-                <th scope="row">1</th>
+                <th scope="row" id="1">{{id}}</th>
                 <td>{{name}}</td>
                 <td>{{rego}}</td>
                 <td>{{mobile}}</td>
                 <td>{{comments}}</td>
               </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>{{name}}</td>
-                <td>{{rego}}</td>
-                <td>{{mobile}}</td>
-                <td>{{comments}}</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>{{name}}</td>
-                <td>{{rego}}</td>
-                <td>{{mobile}}</td>
-                <td>{{comments}}</td>
-              </tr>
-              <tr>
-                <th scope="row">4</th>
-                <td>{{name}}</td>
-                <td>{{rego}}</td>
-                <td>{{mobile}}</td>
-                <td>{{comments}}</td>
-              </tr>
-              <tr>
-                <th scope="row">5</th>
-                <td>{{name}}</td>
-                <td>{{rego}}</td>
-                <td>{{mobile}}</td>
-                <td>{{comments}}</td>
-              </tr>
-              <tr>
-                  <th scope="row">6</th>
-                  <td>{{name}}</td>
-                  <td>{{rego}}</td>
-                  <td>{{mobile}}</td>
-                  <td>{{comments}}</td>
-                </tr>
-                <tr>
-                  <th scope="row">7</th>
-                  <td>{{name}}</td>
-                  <td>{{rego}}</td>
-                  <td>{{mobile}}</td>
-                  <td>{{comments}}</td>
-                </tr>
-                <tr>
-                <th scope="row">8</th>
-                <td>{{name}}</td>
-                <td>{{rego}}</td>
-                <td>{{mobile}}</td>
-                <td>{{comments}}</td>
-                </tr>
-                <tr>
-                  <th scope="row">9</th>
-                  <td>{{name}}</td>
-                  <td>{{rego}}</td>
-                  <td>{{mobile}}</td>
-                  <td>{{comments}}</td>
-                </tr>
-                <tr>
-                <th scope="row">10</th>
-                <td>{{name}}</td>
-                <td>{{rego}}</td>
-                <td>{{mobile}}</td>
-                <td>{{comments}}</td>
-                </tr>
+                {{/each}}
                 </tbody>
             </div>
-
+              <button type="button" class="float-right">Edit</button>
             
 </body>
 </html>
