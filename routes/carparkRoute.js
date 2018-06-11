@@ -48,8 +48,7 @@ router.post('/edit/:id', (req, res) => {
       parkProfile.rego = newRego
       parkProfile.mobile = newMobile
       parkProfile.comments = newComments
-      const newProfile = JSON.stringify(parkProfile, null, 2)
-      console.log(newName)
+      const newProfile = JSON.stringify(parkArr, null, 2)
       util.writeData(newProfile, (err) => {
         if (err) {
           res.send('broken').status(500)

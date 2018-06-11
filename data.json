@@ -2,9 +2,9 @@
   "carparks": [
     {
       "id": 1,
-      "name": "test",
-      "rego": "test123",
-      "mobile": "111111",
+      "name": "",
+      "rego": "",
+      "mobile": "",
       "parked": false,
       "blocked": false,
       "colour": "",

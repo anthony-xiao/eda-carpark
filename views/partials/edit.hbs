@@ -16,24 +16,28 @@
   
   <label for="name" class="form-item">
     Name:
-    <input type="text" name="name">
+    <input type="text" name="name" placeholder="{{name}}">
   </label>
   <br>
   <label for="rego" class="form-item">
-    Registration:
-    <input type="text" name="rego">
+    Registration: 
+    <input type="text" name="rego" placeholder="{{rego}}">
   </label>
   <br>
   <label for="mobile" class="form-item">
-    Mobile:
-    <input type="text" name="mobile">
+    Mobile: {{mobile}}
+    <input type="text" name="mobile" placeholder="{{mobile}}">
   </label>
   <br>
   <label for="comments" class="form-item">
-    Comment:
-    <input type="text" name="comments">
+    Comment: {{comments}}
+    <input type="text" name="comments" placeholder="{{comments}}">
   </label>
   <br>
   <input type="submit" name="" value="Submit">
+  <br>
+  <input type="button" name="cancel" value="Cancel" onclick="window.location='/'" />
+  <button onclick="clear({{id}})">Leave</button>
+
 </form>
 
