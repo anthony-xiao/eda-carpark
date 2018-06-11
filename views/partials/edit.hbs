@@ -1,0 +1,39 @@
+<div class="row">
+        <div id="edaIconCol" class="col-sm-2">
+            <a href="/"><img src="" id="edaIcon" class="img-fluid" alt="Responsive image"></a>
+        </div>
+        <div id="appName" class="col-sm-10">
+          <h3>Carpark App</h3>
+          <p>Click on a park when you enter to let people know who's there</p>
+          
+        </div>
+      </div>
+        <p> <em>Welcome to the EDA Carpark App</em>!</p>
+          <h2><em>Driver Details</em></h2>
+
+ <form class="form" action="/carpark/edit/{{id}}" method="post">
+  {{!-- <img class="img-circle" src="#" alt=""> --}}
+  
+  <label for="name" class="form-item">
+    Name:
+    <input type="text" name="name">
+  </label>
+  <br>
+  <label for="rego" class="form-item">
+    Registration:
+    <input type="text" name="rego">
+  </label>
+  <br>
+  <label for="mobile" class="form-item">
+    Mobile:
+    <input type="text" name="mobile">
+  </label>
+  <br>
+  <label for="comments" class="form-item">
+    Comment:
+    <input type="text" name="comments">
+  </label>
+  <br>
+  <input type="submit" name="" value="Submit">
+</form>
+

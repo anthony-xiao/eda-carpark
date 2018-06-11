@@ -2,103 +2,103 @@
   "carparks": [
     {
       "id": 1,
-      "name": null,
-      "rego": null,
-      "mobile": null,
-      "status": false,
+      "name": "test",
+      "rego": "test123",
+      "mobile": "111111",
+      "parked": false,
       "blocked": false,
-      "colour": null,
-      "url": "/carpark/edit/:id"
+      "colour": "",
+      "comments": ""
     },
     {
       "id": 2,
-      "name": null,
-      "rego": null,
-      "mobile": null,
-      "status": false,
+      "name": "",
+      "rego": "",
+      "mobile": "",
+      "parked": false,
       "blocked": false,
-      "colour": null,
-      "url": "/carpark/edit/:id"
+      "colour": "",
+      "comments": ""
     },
     {
       "id": 3,
-      "name": null,
-      "rego": null,
-      "mobile": null,
-      "status": false,
+      "name": "",
+      "rego": "",
+      "mobile": "",
+      "parked": false,
       "blocked": false,
       "colour": "red",
-      "url": "/carpark/edit/:id"
+      "comments": ""
     },
     {
       "id": 4,
-      "name": null,
-      "rego": null,
-      "mobile": null,
-      "status": false,
+      "name": "",
+      "rego": "",
+      "mobile": "",
+      "parked": false,
       "blocked": false,
-      "colour": null,
-      "url": "/carpark/edit/:id"
+      "colour": "",
+      "comments": ""
     },
     {
       "id": 5,
-      "name": null,
-      "rego": null,
-      "mobile": null,
-      "status": false,
+      "name": "",
+      "rego": "",
+      "mobile": "",
+      "parked": false,
       "blocked": false,
-      "colour": null,
-      "url": "/carpark/edit/:id"
+      "colour": "",
+      "comments": ""
     },
     {
       "id": 6,
-      "name": null,
-      "rego": null,
-      "mobile": null,
-      "status": false,
+      "name": "",
+      "rego": "",
+      "mobile": "",
+      "parked": false,
       "blocked": false,
-      "colour": null,
-      "url": "/carpark/edit/:id"
+      "colour": "",
+      "comments": ""
     },
     {
       "id": 7,
-      "name": null,
-      "rego": null,
-      "mobile": null,
-      "status": false,
+      "name": "",
+      "rego": "",
+      "mobile": "",
+      "parked": false,
       "blocked": false,
-      "colour": null,
-      "url": "/carpark/edit/:id"
+      "colour": "",
+      "comments": ""
     },
     {
       "id": 8,
-      "name": null,
-      "rego": null,
-      "mobile": null,
-      "status": false,
+      "name": "",
+      "rego": "",
+      "mobile": "",
+      "parked": false,
       "blocked": false,
-      "colour": null,
-      "url": "/carpark/edit/:id"
+      "colour": "",
+      "comments": ""
     },
     {
       "id": 9,
-      "name": null,
-      "rego": null,
-      "mobile": null,
-      "status": false,
+      "name": "",
+      "rego": "",
+      "mobile": "",
+      "parked": false,
       "blocked": false,
-      "colour": null,
-      "url": "/carpark/edit/:id"
+      "colour": "",
+      "comments": ""
     },
     {
       "id": 10,
-      "name": null,
-      "rego": null,
-      "mobile": null,
-      "status": false,
+      "name": "",
+      "rego": "",
+      "mobile": "",
+      "parked": false,
       "blocked": false,
-      "colour": null,
-      "url": "/carpark/edit/:id"
+      "colour": "",
+      "comments": ""
     }
   ]
 }
