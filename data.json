@@ -2,13 +2,13 @@
   "carparks": [
     {
       "id": 1,
-      "name": "",
-      "rego": "adsf",
-      "mobile": "asdf",
+      "name": "asdf",
+      "rego": "123",
+      "mobile": "adf",
       "parked": false,
       "blocked": false,
       "colour": "",
-      "comments": "asdf"
+      "comments": ""
     },
     {
       "id": 2,

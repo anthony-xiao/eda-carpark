@@ -5,7 +5,8 @@ const db = knex(config)
 
 module.exports = {
   show,
-  findPark
+  findPark,
+  updatePark
 }
 
 function show () {
@@ -17,4 +18,15 @@ function findPark (id) {
   return db('carpark')
     .where('id', id)
     .select()
+}
+
+function updatePark (id, data) {
+  return db('carpark')
+    .where('id', id)
+    .update({
+      name: data.name,
+      rego: data.rego,
+      mobile: data.mobile,
+      comments: data.comments
+    })
 }
