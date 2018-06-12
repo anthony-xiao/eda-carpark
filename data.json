@@ -3,12 +3,12 @@
     {
       "id": 1,
       "name": "",
-      "rego": "",
-      "mobile": "",
+      "rego": "adsf",
+      "mobile": "asdf",
       "parked": false,
       "blocked": false,
       "colour": "",
-      "comments": ""
+      "comments": "asdf"
     },
     {
       "id": 2,

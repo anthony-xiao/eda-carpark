@@ -27,10 +27,16 @@ router.get('/edit/:id', (req, res) => {
   })
 })
 
-// router.get('/view/:id', (req, res) => {
-//   const id = req.params.id
-//   res.send(id)
-// })
+router.get('/view/', (req, res) => {
+  util.getData((err, data) => {
+    if (err) {
+      res.send('oh no').status(500)
+    } else {
+      const parkArr = JSON.parse(data)
+      res.render('./partials/details', parkArr)
+    }
+  })
+})
 
 router.post('/edit/:id', (req, res) => {
   util.getData((err, data) => {

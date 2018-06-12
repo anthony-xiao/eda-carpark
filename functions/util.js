@@ -1,6 +1,5 @@
 const fs = require('fs')
 const path = require('path')
-const express = require('express')
 
 function getData (cb) {
   const filePath = path.join(__dirname, '../data.json')

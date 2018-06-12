@@ -35,4 +35,3 @@ function clear (id) {
   }
 }
 
-clear(1)
