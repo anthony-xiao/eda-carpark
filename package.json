@@ -8,12 +8,15 @@
   "scripts": {
     "debug": "nodemon index --ignore data.json",
     "test": "jest --watchAll --noStackTrace",
-    "start": "node index"
+    "start": "node index",
+    "knex": "knex"
   },
   "dependencies": {
     "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
-    "handlebar": "^1.0.0"
+    "handlebar": "^1.0.0",
+    "knex": "^0.14.6",
+    "sqlite3": "^4.0.0"
   },
   "devDependencies": {
     "cheerio": "^1.0.0-rc.2",

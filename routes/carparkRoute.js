@@ -1,41 +1,55 @@
 const express = require('express')
 const util = require('../functions/util')
+const db = require('../functions/db')
 
 const router = express.Router()
 
 router.get('/', (req, res) => {
-  util.getData((err, data) => {
-    if (err) {
-      res.send('oh no').status(500)
-    } else {
-      const parkInfo = JSON.parse(data)
-      res.render('./partials/index', parkInfo)
-    }
-  })
+  db.show()
+    .then(parkInfo => {
+      res.render('./partials/index', {parkInfo})
+    })
+    .catch(err => {
+      res.send(err.message).status(500)
+    })
 })
+
+// router.get('/edit/:id', (req, res) => {
+//   util.getData((err, data) => {
+//     if (err) {
+//       res.send('broken').status(500)
+//     } else {
+//       const parkArr = JSON.parse(data)
+//       const parkId = Number(req.params.id)
+//       const parkProfile = parkArr.carparks.find(obj => obj.id === parkId)
+//       res.render('./partials/edit', parkProfile)
+//     }
+//   })
+// })
 
 router.get('/edit/:id', (req, res) => {
-  util.getData((err, data) => {
-    if (err) {
-      res.send('broken').status(500)
-    } else {
-      const parkArr = JSON.parse(data)
-      const parkId = Number(req.params.id)
-      const parkProfile = parkArr.carparks.find(obj => obj.id === parkId)
-      res.render('./partials/edit', parkProfile)
-    }
-  })
+  const id = Number(req.params.id)
+  db.findPark(id)
+    .then(park => {
+      const parkObj = park[0]
+      console.log(parkObj)
+      res.render('./partials/edit', parkObj)
+    })
+    .catch(err => {
+      res.send(err.message).status(500)
+    })
 })
 
-router.get('/view/', (req, res) => {
-  util.getData((err, data) => {
-    if (err) {
-      res.send('oh no').status(500)
-    } else {
-      const parkArr = JSON.parse(data)
-      res.render('./partials/details', parkArr)
-    }
-  })
+router.get('/view', (req, res) => {
+  db.show()
+    .then(parkInfo => {
+      const parkObj = {parkInfo}[0]
+      console.log(parkInfo)
+      res.render('./partials/details', parkObj)
+    })
+    .catch(err => {
+      res.send(err.message).status(500)
+    })
 })
 
 router.post('/edit/:id', (req, res) => {
